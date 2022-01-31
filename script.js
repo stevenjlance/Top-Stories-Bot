@@ -21,7 +21,7 @@ async function sendApiRequest(){
 	var response = await fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${YOUR_API_KEY_HERE}`)
 	var data = await response.json()
 	for(var i = 0; i < data.results.length; i++){
-		outputDiv.innerHTML += `<div class="card col-6" style="width: 18rem;">
+		outputDiv.innerHTML += `<div class="card col" style="width: 18rem;">
 		<img src="${data.results[i].multimedia[0].url}" class="card-img-top" alt="...">
 		<div class="card-body">
 			<h5 class="card-title">${data.results[i].title}</h5>
