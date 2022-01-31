@@ -1,0 +1,13 @@
+h1 {
+	text-align: center;
+}
+
+body {
+	margin: 30px;
+}
+
+#topButton {
+	display: block;
+  width: 150px; 
+	margin: 0 auto;
+}
